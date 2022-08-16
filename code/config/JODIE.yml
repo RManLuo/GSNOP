@@ -1,0 +1,40 @@
+sampling:
+  - no_sample: True
+    history: 1
+memory: 
+  - type: 'node'
+    dim_time: 100
+    deliver_to: 'self'
+    mail_combine: 'last'
+    memory_update: 'rnn'
+    mailbox_size: 1
+    combine_node_feature: True
+    dim_out: 100
+gnn:
+  - arch: 'identity'
+    time_transform: 'JODIE'
+np:
+  - r_dim: 256
+    z_dim: 256
+    h_dim: 256
+    y_dim: 128
+    t_dim: 256
+    out_dim: 256
+    l: 10
+    r_tol: 1e-5
+    a_tol: 1e-7
+    method: "dopri5"
+    context_split: 0.1
+    old_as_context: true
+train:
+  - epoch: 999
+    batch_size: 600
+    test_batch_size: 100
+    history_encoding_batch_size: 600
+    lr: 0.00001
+    dropout: 0.1
+    train_neg_size: 1
+    all_on_gpu: True
+    patience: 5
+    train_ratio: 0
+    test_split_num: 5

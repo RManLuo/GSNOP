@@ -1,0 +1,6 @@
+conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+conda install -c dglteam dgl-cuda11.3
+conda install pandas numpy pyyaml tqdm pybind11 psutil scikit-learn
+python setup.py build_ext --inplace
+python setup.py install
+pip install torch-scatter torchdiffeq
