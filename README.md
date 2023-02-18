@@ -2,7 +2,9 @@
 
 Official code implementation for WSDM 23 paper Graph Sequential Neural ODE Process for Link Prediction on Dynamic and Sparse Graphs.
 
-Proof supplementary file: [supplementary_file.pdf](./upplementary_file.pdf)
+[Proof supplementary file](./upplementary_file.pdf)  
+[Slides](./WSDM-23-GSNOP-Slides.pdf)   
+[Poster](./WSDM-23-GSNOP-Poster.pdf)
 
 Source code: `code`
 ## Environment
