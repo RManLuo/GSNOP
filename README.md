@@ -2,7 +2,8 @@
 
 Official code implementation for WSDM 23 paper Graph Sequential Neural ODE Process for Link Prediction on Dynamic and Sparse Graphs.
 
-[Proof supplementary file](./upplementary_file.pdf)  
+[Paper](https://dl.acm.org/doi/10.1145/3539597.3570465)   
+[Proof and supplementary file](./upplementary_file.pdf)    
 [Slides](./WSDM-23-GSNOP-Slides.pdf)   
 [Poster](./WSDM-23-GSNOP-Poster.pdf)
 
@@ -36,4 +37,23 @@ python train_np.py --data WIKI_0.3 --config config/APAN.yml --base_model origin 
 python train_np.py --data WIKI_0.3 --config config/APAN.yml --base_model snp --ode --eval_neg_samples 50
 python train_np.py --data WIKI_0.3 --config config/JODIE.yml --base_model origin --eval_neg_samples 50
 python train_np.py --data WIKI_0.3 --config config/JODIE.yml --base_model snp --ode --eval_neg_samples 50
+```
+## Bibfile
+```
+@inproceedings{luo2022gsnop,
+author = {Luo, Linhao and Haffari, Gholamreza and Pan, Shirui},
+title = {Graph Sequential Neural ODE Process for Link Prediction on Dynamic and Sparse Graphs},
+year = {2023},
+isbn = {9781450394079},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3539597.3570465},
+doi = {10.1145/3539597.3570465},
+booktitle = {Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining},
+pages = {778–786},
+numpages = {9},
+keywords = {neural process, link prediction, graph neural networks, dynamic graphs},
+location = {Singapore, Singapore},
+series = {WSDM '23}
+}
 ```
