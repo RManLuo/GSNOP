@@ -57,3 +57,5 @@ location = {Singapore, Singapore},
 series = {WSDM '23}
 }
 ```
+## Acknowlement
+This repo is mainly based on [amazon-science/tgl](https://github.com/amazon-science/tgl). We thank the authors for their great works.
